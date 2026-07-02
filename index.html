@@ -4,13 +4,13 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="theme-color" content="#FAF6EE" />
-<meta name="description" content="Attila Kondor - Security Studies student at Leiden University. Cyber governance, conflict research, OSINT. Available for internships from August 2026 in The Hague / EU." />
+<meta name="description" content="Attila Kondor - Security Studies student at Leiden focused on AI governance and the security implications of frontier AI systems. Builds agentic tooling in the Claude / MCP ecosystem. Available for internships from August 2026 in The Hague / EU." />
 <title>Attila Kondor - CV</title>
 
 <!-- Open Graph -->
 <meta property="og:type" content="profile" />
-<meta property="og:title" content="Attila Kondor - Security Studies, The Hague" />
-<meta property="og:description" content="Cyber governance, conflict research, OSINT. Available for internships from August 2026." />
+<meta property="og:title" content="Attila Kondor - AI Governance &amp; Security Studies, The Hague" />
+<meta property="og:description" content="Security Studies at Leiden with a focus on AI governance and frontier-AI risk. Building agentic tooling in the Claude / MCP ecosystem. Available Aug 2026." />
 <meta property="og:url" content="https://attilakondor.com/" />
 <meta property="og:image" content="https://attilakondor.com/assets/social/og-image.png" />
 <meta property="og:image:width" content="1200" />
@@ -20,8 +20,8 @@
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Attila Kondor - Security Studies, The Hague" />
-<meta name="twitter:description" content="Cyber governance, conflict research, OSINT." />
+<meta name="twitter:title" content="Attila Kondor - AI Governance &amp; Security Studies, The Hague" />
+<meta name="twitter:description" content="AI governance and frontier-AI risk. Building agentic tooling in the Claude / MCP ecosystem." />
 <meta name="twitter:image" content="https://attilakondor.com/assets/social/og-image.png" />
 
 <!-- Schema.org structured data -->
@@ -103,6 +103,7 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="music.html">Music &amp; Audio →</a></li>
     </ul>
     <div class="nav-right">
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
@@ -120,13 +121,14 @@
 
 <!-- ============== HERO ============== -->
 <header class="hero" id="top">
+  <canvas id="heroBg" class="hero-bg" aria-hidden="true"></canvas>
   <div class="container">
     <div class="hero-grid">
       <div class="hero-text">
         <div class="eyebrow" style="margin-bottom: 22px;">Curriculum Vitae · 2026</div>
         <h1>
           Attila Kondor
-          <span class="accent">Security Studies student at Leiden. Cyber governance, conflict research, OSINT. Founder of Harmonic Conservatory.</span>
+          <span class="accent">Security Studies student at Leiden focused on AI governance and the security implications of frontier AI systems. Building agentic tooling in the Claude / MCP ecosystem on the side.</span>
         </h1>
         <div class="hero-meta">
           <span>The Hague, Netherlands</span>
@@ -136,49 +138,8 @@
         </div>
         <div class="hero-actions">
           <a href="#projects" class="btn btn-primary">See projects →</a>
+          <a href="assets/docs/attila-kondor-cv.pdf" class="btn" target="_blank" rel="noopener">Download CV (PDF)</a>
           <a href="#contact" class="btn">Contact</a>
-        </div>
-      </div>
-
-      <!-- ====== Lens selector ====== -->
-      <div class="lens" id="lens">
-        <div class="lens-prompt">Tailor this CV to:</div>
-        <div class="lens-doors">
-          <button class="door" data-lens-btn="security" aria-pressed="false">
-            <span class="door-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3z"/>
-              </svg>
-            </span>
-            <span class="door-eyebrow">For</span>
-            <span class="door-title">Security &amp; Policy</span>
-            <span class="door-sub">Cyber governance, rule of law, applied security work.</span>
-          </button>
-          <button class="door" data-lens-btn="music-tech" aria-pressed="false">
-            <span class="door-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 12h2l2-7 4 14 3-9 2 4h5"/>
-              </svg>
-            </span>
-            <span class="door-eyebrow">For</span>
-            <span class="door-title">Music Technology</span>
-            <span class="door-sub">DSP, score analysis, browser music tooling.</span>
-          </button>
-          <button class="door" data-lens-btn="audio" aria-pressed="false">
-            <span class="door-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="9"/>
-                <path d="M12 7v5l3 2"/>
-              </svg>
-            </span>
-            <span class="door-eyebrow">For</span>
-            <span class="door-title">Audio Engineering</span>
-            <span class="door-sub">Studio, recording, mixing, scoring.</span>
-          </button>
-        </div>
-        <div class="lens-overview">
-          <button class="lens-overview-btn active" data-lens-btn="all" aria-pressed="true">View everything</button>
-          <span class="lens-active-label">Lens: <strong id="lensActive">All</strong></span>
         </div>
       </div>
     </div>
@@ -195,15 +156,23 @@
       <div class="about-text reveal">
         <p>
           I'm a <strong>Security Studies student</strong> at Leiden
-          University (BSc, graduating 2027), focused on cybersecurity
-          governance and international cooperation, based in The Hague.
+          University (BSc, graduating 2027), based in The Hague and
+          building toward the intersection of <strong>AI governance and
+          frontier-AI security</strong> - where technical AI systems meet
+          the institutions that have to govern them (EU AI Act,
+          multilateral security bodies, national safety institutes).
         </p>
         <p>
-          Outside the classroom I'm <strong>founding and developing
-          Harmonic Conservatory</strong>, a pre-launch music-technology
-          platform centred on <em>Nebula ScoreWorks</em> - a
-          browser-based system for MIDI/MusicXML analysis, score
-          rendering, and data-driven musical prose.
+          Outside the classroom I ship real code in that space:
+          <strong>Claude API, MCP, and agentic workflows</strong> for a
+          browser-based AI tutoring engine, plus a Node.js regression
+          harness that treats model behaviour as something to test and
+          benchmark rather than trust. The <strong>OSINT / PRISMA
+          research methodology</strong> from Leiden carries directly into
+          how I think about AI-system risk analysis. I also have a
+          separate life in music and audio engineering; see the
+          <a href="music.html">Music &amp; Audio</a> page for that side
+          of things.
         </p>
         <p>
           Before all that I worked construction in Slovakia, helping build
@@ -214,61 +183,37 @@
         </p>
       </div>
       <div class="stats reveal-stagger" id="statsGrid">
-        <!-- ALL (default) + SECURITY -->
-        <div class="stat" data-lens-show="all security">
+        <div class="stat">
           <div class="stat-num">19<small> / 5</small></div>
           <div class="stat-label">PRISMA-compliant studies / continents</div>
         </div>
-        <div class="stat" data-lens-show="all security">
+        <div class="stat">
           <div class="stat-num">4</div>
           <div class="stat-label">Regional research dossiers</div>
         </div>
-        <div class="stat" data-lens-show="all security">
+        <div class="stat">
           <div class="stat-num">2.5<small> yr</small></div>
           <div class="stat-label">Refugee housing fieldwork (Slovakia)</div>
         </div>
-        <div class="stat" data-lens-show="all">
+        <div class="stat">
           <div class="stat-num">3</div>
           <div class="stat-label">Working languages (EN · NL · SK)</div>
         </div>
-        <!-- SECURITY only -->
-        <div class="stat" data-lens-show="security">
+        <div class="stat">
           <div class="stat-num">Aug<small> '26</small></div>
           <div class="stat-label">ISC2 CC certification scheduled</div>
         </div>
-        <!-- MUSIC TECH -->
-        <div class="stat" data-lens-show="music-tech">
+        <div class="stat">
           <div class="stat-num">909<small>+</small></div>
           <div class="stat-label">Pieces analysed (POP909 dataset)</div>
         </div>
-        <div class="stat" data-lens-show="music-tech">
+        <div class="stat">
           <div class="stat-num">81.85<small>%</small></div>
           <div class="stat-label">MIREX root accuracy (vs 37 % baseline)</div>
         </div>
-        <div class="stat" data-lens-show="music-tech">
-          <div class="stat-num">15</div>
-          <div class="stat-label">Curriculum modules shipped (Conservatory)</div>
-        </div>
-        <div class="stat" data-lens-show="music-tech">
+        <div class="stat">
           <div class="stat-num">JUCE<small> 8</small></div>
           <div class="stat-label">Native VST shipped (Chord Architect)</div>
-        </div>
-        <!-- AUDIO ENGINEERING -->
-        <div class="stat" data-lens-show="audio">
-          <div class="stat-num">81.88<small>%</small></div>
-          <div class="stat-label">Abbey Road Institute graduation</div>
-        </div>
-        <div class="stat" data-lens-show="audio">
-          <div class="stat-num">1<small> yr</small></div>
-          <div class="stat-label">Full-time Advanced Diploma at ARI</div>
-        </div>
-        <div class="stat" data-lens-show="audio">
-          <div class="stat-num">5</div>
-          <div class="stat-label">Studios / venues recorded in</div>
-        </div>
-        <div class="stat" data-lens-show="audio">
-          <div class="stat-num">IB HL</div>
-          <div class="stat-label">Music students mentored to top grades</div>
         </div>
       </div>
     </div>
@@ -305,21 +250,8 @@
         <div class="edu-school">International School of The Hague</div>
         <div class="edu-degree">IB Diploma Programme</div>
         <div class="edu-detail">
-          Full IB Diploma. Mentored peers in HL Music - multiple
-          students achieved the highest possible grade in Exploration
-          Reports and Video Performances under my guidance.
-        </div>
-      </div>
-
-      <div class="edu-card">
-        <div class="edu-date">Graduated · Nov 2025</div>
-        <div class="edu-school">Abbey Road Institute Amsterdam</div>
-        <div class="edu-degree">Music Production &amp; Sound Engineering Advanced Diploma (1 yr, full-time)</div>
-        <div class="edu-detail">
-          Pro Tools, SSL console operation, mixing, mastering, music
-          business and copyright law. Final grade 81.88 %; productions
-          tracked at ARI Amsterdam. Formal ceremony June 2026, London.
-          <a href="assets/docs/abbey-road-completion.pdf" target="_blank" rel="noopener" class="edu-link">View completion letter (PDF) →</a>
+          Full IB Diploma, Higher Level coursework spanning sciences
+          and humanities.
         </div>
       </div>
 
@@ -375,99 +307,38 @@
 
       <div class="tl-item reveal">
         <div class="tl-date">Mar 2025 - Present · Hybrid</div>
-        <div class="tl-role">Founder &amp; Lead Developer</div>
-        <div class="tl-company">Harmonic Conservatory · Self-employed
+        <div class="tl-role">Applied AI Engineer - Adaptive Tutoring System</div>
+        <div class="tl-company">Independent / Self-employed (Nebula ScoreWorks)
           <span class="pin">The Hague, NL</span></div>
         <p class="tl-body">
-          Founding and developing Harmonic Conservatory, a pre-launch
-          music-technology startup. Its first product, <em>Nebula
-          ScoreWorks</em>, is a website that takes a piece of digital
-          sheet music and breaks it down automatically - showing the
-          chords, the structure, the rises and falls of tension - and
-          writes a plain-English description of what's happening
-          musically.
+          Built <em>Nebula ScoreWorks</em>, a browser-based analysis
+          engine wrapped by an <strong>adaptive AI tutoring layer</strong>
+          powered by the <strong>Claude API</strong>. The system extracts
+          structural features from digital sheet music (key, chords,
+          form, tension) with classical DSP, then hands them to Claude
+          to generate phrase-level explanations tailored to the learner.
+          A dedicated <strong>Node.js regression harness</strong> treats
+          model behaviour as testable rather than trusted. Wider
+          product / venture story on the
+          <a href="music.html">Music &amp; Audio</a> page.
         </p>
         <ul class="tl-bullets">
-          <li>Built the entire analyser in the browser using plain JavaScript - no servers, runs instantly on any computer.</li>
-          <li>Built an automated test system that runs the analyser against 909+ real songs from a public reference dataset, flagging any drop in accuracy on every code change.</li>
-          <li>Designed a classification system that recognises common song structures (verse-chorus-verse patterns and similar) - the same kind of pattern-recognition skill used in OSINT investigation and threat-classification work.</li>
-          <li>Tracked down a tricky audio bug that was silently cutting off the first fifth of a second of every playback. Wrote a clean fix and shipped it.</li>
-          <li>Built an automatic commentary feature: for every musical phrase the system writes a paragraph in plain English explaining what's happening - so beginners can read the analysis without music-theory training.</li>
+          <li><strong>Integrated the Claude API</strong> as an adaptive AI tutoring layer over the deterministic analysis output - phrase-by-phrase explanations, difficulty-scaled to the learner, with structured prompts, output validation, and cost / rate-limit handling.</li>
+          <li><strong>Built a Node.js regression harness</strong> that runs the analyser against 909+ pieces from a public reference dataset on every code change, producing diff reports and flagging any accuracy drop - the same pattern I'd apply to evaluating an LLM-based system on a fixed test set.</li>
+          <li>Designed a Viterbi-decoded chord-progression classifier and Krumhansl-Schmuckler key detector - lifted chord-root accuracy from 37 % to 81.85 % on the POP909 benchmark across 6+ measured iterations.</li>
+          <li>Built the analyser as pure client-side JavaScript (no server), and the tutoring UI as a React front-end with a scoped ~3,550-line CSS design system.</li>
+          <li>Tracked down a tricky Web Audio bug silently cutting off the first fifth of a second of every playback; the fix alone lifted a key accuracy metric by 19 percentage points, with a follow-up timing fix adding another 5.</li>
         </ul>
-        <div class="inline-strip">
-          <div class="photo" data-cap="Nebula ScoreWorks - tension graph &amp; score render with chord roman-numeral analysis">
-            <img decoding="async" src="assets/photos/nebula-1.jpg" alt="Nebula ScoreWorks - tension graph view" loading="lazy"/>
-            <div class="cap">Tension graph · Score render</div>
-          </div>
-          <div class="photo" data-cap="Nebula ScoreWorks - global music culture &amp; eras map">
-            <img decoding="async" src="assets/photos/nebula-3.jpg" alt="Nebula ScoreWorks - culture and eras map" loading="lazy"/>
-            <div class="cap">Culture &amp; eras map</div>
-          </div>
-          <div class="photo" data-cap="Nebula ScoreWorks - phrase-specific composition prose">
-            <img decoding="async" src="assets/photos/nebula-6.jpg" alt="Nebula ScoreWorks - generative prose" loading="lazy"/>
-            <div class="cap">Generative composition prose</div>
-          </div>
-        </div>
         <div class="tl-tags">
-          <span class="chip gold">Vanilla JS</span>
-          <span class="chip gold">VexFlow</span>
-          <span class="chip gold">Web Audio</span>
-          <span class="chip gold">MIDI / MusicXML</span>
-          <span class="chip blue">Node CLI</span>
+          <span class="chip gold">Claude API</span>
+          <span class="chip gold">MCP</span>
+          <span class="chip gold">Agentic workflows</span>
+          <span class="chip gold">React</span>
+          <span class="chip blue">Node.js regression harness</span>
+          <span class="chip blue">Model evals</span>
+          <span class="chip">Vanilla JS</span>
           <span class="chip">DSP</span>
           <span class="chip">Design Systems</span>
-        </div>
-      </div>
-
-      <div class="tl-item reveal">
-        <div class="tl-date">Jul 2023 - Jan 2025 · Hybrid</div>
-        <div class="tl-role">Music Instructor &amp; Independent Recording Engineer</div>
-        <div class="tl-company">Self-employed
-          <span class="pin">The Hague, NL</span></div>
-        <p class="tl-body">
-          Two parallel tracks under one self-employed practice. <strong>Taught
-          students</strong> composition, piano performance, and music
-          production using industry-standard tools (Logic Pro X, Pro
-          Tools, SSL mixing consoles); several mentees earned the
-          <strong>top grade</strong> in IB Higher-Level Music. Alongside
-          teaching, <strong>engineered recording sessions for working
-          professional artists</strong> - strings, vocals, solo piano,
-          and live theatrical performances.
-        </p>
-        <ul class="tl-bullets">
-          <li><strong>Sessions for professional artists</strong> - tracked string ensembles, solo vocalists, and live theatrical performances across studio and venue settings, with full microphone-placement and signal-chain documentation so the sessions are reproducible.</li>
-          <li>Recorded at <strong>Amare</strong>, <strong>Theater aan het Spui</strong>, and the Bethlehem chapel - covering studio piano captures, choir / ensemble work, and live theatrical productions.</li>
-          <li>Designed individual lesson plans for each student - some learning piano as songwriters, others as classical arrangers.</li>
-          <li>Trained students to move smoothly between the major music software (Logic Pro X, Pro Tools, Sibelius, MuseScore, Dorico) so they could pick the right tool for each project.</li>
-          <li>Wrote small command-line scripts that automatically convert and rename batches of audio files - saving students hours of manual work each session.</li>
-          <li>Composed original pieces inspired by theatrical performances, tailored to IB exam requirements.</li>
-        </ul>
-        <div class="inline-strip">
-          <div class="photo" data-cap="On the faders - mix pass">
-            <img decoding="async" src="assets/photos/studio-console-faders.jpg" alt="On the faders" loading="lazy"/>
-            <div class="cap">Faders · Mix pass</div>
-          </div>
-          <div class="photo" data-cap="Flying faders mid-recall">
-            <img decoding="async" src="assets/photos/studio-flying-faders.jpg" alt="Flying faders" loading="lazy"/>
-            <div class="cap">Automation · Flying faders</div>
-          </div>
-          <div class="photo" data-cap="Patchbay - signal routing">
-            <img decoding="async" src="assets/photos/studio-patchbay.jpg" alt="Patchbay" loading="lazy"/>
-            <div class="cap">Patchbay · Routing</div>
-          </div>
-        </div>
-        <div class="tl-tags">
-          <span class="chip gold">Recording Engineer</span>
-          <span class="chip gold">Composition</span>
-          <span class="chip gold">Mentoring</span>
-          <span class="chip">String tracking</span>
-          <span class="chip">Vocal tracking</span>
-          <span class="chip">Live capture</span>
-          <span class="chip">Pro Tools</span>
-          <span class="chip">Logic Pro X</span>
-          <span class="chip">SSL consoles</span>
-          <span class="chip">Sibelius / MuseScore / Dorico</span>
-          <span class="chip blue">Bash</span>
         </div>
       </div>
 
@@ -478,8 +349,12 @@
           <span class="pin">The Hague, NL</span></div>
         <p class="tl-body">
           A self-directed cybersecurity practice running alongside my
-          Leiden degree - mixing hands-on technical work, structured
-          policy research, and regional case studies.
+          Leiden degree - hands-on technical work, structured policy
+          research, and regional case studies. The <strong>PRISMA / OSINT
+          research methodology</strong> here is the same lens I bring to
+          AI-system risk analysis: rigorous sourcing, structured failure
+          analysis, and honest accounting of what institutions actually
+          catch versus what slips past them.
         </p>
         <ul class="tl-bullets">
           <li>Daily use of <strong>Parrot OS / Debian</strong> (a security-focused Linux distribution): command line, networking, and defensive security tools.</li>
@@ -488,6 +363,7 @@
           <li>Three regional research dossiers: <strong>Syria</strong> (how chemical-weapons use is held to account; Saudi Arabia's role in the Civil War), <strong>Fukushima</strong> (a structured failure analysis of the 2011 disaster and the global nuclear-safety bodies that should have caught it), and <strong>DPRK</strong> (the UN sanctions system, North Korea's nuclear posture, and how Pyongyang routinely evades enforcement).</li>
           <li>Independent reading on <strong>financial crime</strong>: how banks help or hurt during conflicts (sanctions evasion, war profiteering), predatory lending, and gaps in cryptocurrency regulation.</li>
           <li>Booked the <strong>ISC2 Certified in Cybersecurity</strong> exam for Aug 2026 and applied for the HSD Cybersecurity Summer School (run jointly by NATO's NCIA, Europol, Leiden, and the Dutch Ministry of Defence).</li>
+          <li>Informational meetings with <strong>Amnesty International NL</strong> and the <strong>Clingendael Institute</strong> on EU security &amp; policy pathways - both advise EU-level policy in adjacent areas (human-rights compliance, international affairs and security research) and were useful for orienting my own long-term direction.</li>
         </ul>
         <div class="tl-tags">
           <span class="chip rose">Parrot OS</span>
@@ -550,31 +426,24 @@
     <div class="eyebrow reveal">04 · Projects</div>
     <h2 class="section-title reveal">Selected work.</h2>
     <p class="section-lede reveal">
-      Filtered by your chosen lens - pick one below to narrow the grid,
-      or hit <em>All</em> to view everything. The lens at the top of
-      the page stays in sync.
+      Applied AI systems, AI-adjacent tooling, and the security and
+      policy research that sits alongside them.
     </p>
-
-    <div class="lens-mini reveal" id="lensMini" role="group" aria-label="Filter projects by lens">
-      <span class="lens-mini-label">Filter:</span>
-      <button class="lens-mini-btn" data-lens-btn="all" aria-pressed="true">All</button>
-      <button class="lens-mini-btn" data-lens-btn="security" aria-pressed="false">Security &amp; Policy</button>
-      <button class="lens-mini-btn" data-lens-btn="music-tech" aria-pressed="false">Music Tech</button>
-      <button class="lens-mini-btn" data-lens-btn="audio" aria-pressed="false">Audio Engineering</button>
-    </div>
 
     <div class="projects-grid" id="projectGrid">
 
-      <!-- ===== Music Tech (4) ===== -->
-      <article class="project has-shots reveal" data-lens="music-tech">
-        <div class="project-tag"><span class="dot"></span> Music Tech · Flagship</div>
-        <h3>Nebula ScoreWorks - Music analyser that runs in your browser</h3>
+      <article class="project has-shots reveal">
+        <div class="project-tag"><span class="dot"></span> Applied AI · Flagship</div>
+        <h3>Nebula ScoreWorks - AI tutoring engine over a music analyser</h3>
         <p>
-          Drop a piece of digital sheet music in and the system breaks
-          it down automatically: what key it's in, every chord, the
-          song's structure (verse / chorus / bridge), and where the
-          tension rises and falls. Renders the score visually as you
-          scroll. No server, no install.
+          A browser-based analysis engine wrapped by an adaptive AI
+          tutoring layer. Classical DSP extracts key, chords, form and
+          tension deterministically; the <strong>Claude API</strong>
+          reads those features and produces phrase-level explanations
+          calibrated to the learner. Ships with a
+          <strong>Node.js regression harness</strong> that treats model
+          behaviour as testable rather than trusted - the same
+          instinct I'd take into any LLM-based system.
         </p>
         <div class="project-shots" aria-label="Nebula ScoreWorks screenshots">
           <div class="shot" data-cap="Tension graph + score render with chord roman-numeral analysis">
@@ -603,15 +472,19 @@
           </div>
         </div>
         <div class="project-meta">
-          <span class="chip gold">Vanilla JS</span>
-          <span class="chip">VexFlow</span>
-          <span class="chip">Web Audio</span>
-          <span class="chip blue">MIDI / MusicXML</span>
+          <span class="chip gold">Claude API</span>
+          <span class="chip gold">MCP</span>
+          <span class="chip gold">Agentic workflows</span>
+          <span class="chip blue">Node.js regression harness</span>
+          <span class="chip blue">Model evals</span>
+          <span class="chip">React</span>
+          <span class="chip">Vanilla JS</span>
+          <span class="chip">DSP</span>
         </div>
       </article>
 
-      <article class="project reveal" data-lens="music-tech">
-        <div class="project-tag"><span class="dot"></span> Music Tech · Core algorithm</div>
+      <article class="project reveal">
+        <div class="project-tag"><span class="dot"></span> Applied AI · Core algorithm</div>
         <h3>Music key-detection engine</h3>
         <p>
           The "brain" inside the analyser. Figures out what key a piece
@@ -628,41 +501,8 @@
         </div>
       </article>
 
-      <article class="project reveal" data-lens="music-tech">
-        <div class="project-tag"><span class="dot"></span> Music Tech · EdTech</div>
-        <h3>Harmonic Conservatory - online music school</h3>
-        <p>
-          A complete online music school. 15 progressive modules cover
-          theory, harmony, ear training, recording, mixing, and film
-          scoring - all running in the browser. Includes log-in to save
-          progress and choose between visual themes.
-        </p>
-        <div class="project-meta">
-          <span class="chip gold">EdTech</span>
-          <span class="chip">Curriculum design</span>
-          <span class="chip">15 modules</span>
-        </div>
-      </article>
-
-      <article class="project reveal" data-lens="music-tech">
-        <div class="project-tag"><span class="dot"></span> Music Tech · Toolkit</div>
-        <h3>Browser Music-Theory Toolkit</h3>
-        <p>
-          A collection of in-browser music-theory tools: a chord-progression
-          library, a genre-aware chord enhancer, a chord generator,
-          a workbench for sketching progressions, and a reference for
-          music traditions around the world. All share the same notation
-          renderer.
-        </p>
-        <div class="project-meta">
-          <span class="chip gold">Music theory</span>
-          <span class="chip">Generative tools</span>
-          <span class="chip">Chord voicing</span>
-        </div>
-      </article>
-
-      <article class="project reveal" data-lens="music-tech">
-        <div class="project-tag"><span class="dot"></span> Music Tech · Native plugin</div>
+      <article class="project reveal" id="chord-architect">
+        <div class="project-tag"><span class="dot"></span> Software · Native plugin</div>
         <h3>Chord Architect - music plugin for Logic Pro &amp; other DAWs</h3>
         <p>
           A music-software plugin built in <strong>C++</strong> that runs
@@ -680,8 +520,7 @@
         </div>
       </article>
 
-      <!-- ===== Security (3) ===== -->
-      <article class="project reveal" data-lens="security">
+      <article class="project reveal">
         <div class="project-tag"><span class="dot"></span> Security · Research</div>
         <h3>Trafficking &amp; rule-of-law literature review (Leiden coursework)</h3>
         <p>
@@ -701,16 +540,19 @@
         </div>
       </article>
 
-      <article class="project reveal" data-lens="security">
+      <article class="project reveal">
         <div class="project-tag"><span class="dot"></span> Security · Simulation + dev</div>
-        <h3>Operation Nexus - crisis-simulation game</h3>
+        <h3>Operation Nexus - crisis-simulation web app</h3>
         <p>
-          A crisis-simulation game built as a group coursework project.
-          Players make decisions inside a fictional post-conflict
-          country (Varalia) and watch the rule of law either collapse
-          or hold. Real-time graphs show stability and legitimacy. The
-          teacher can pause, rewind, and inject new events. Built in
-          plain JavaScript so it runs offline in any classroom.
+          A full-stack crisis-simulation game (Next.js, Vercel, Neon
+          Postgres) built as a Leiden IP1 coursework project. Players
+          make decisions inside a fictional post-conflict country
+          (Varalia) and watch the rule of law either collapse or hold;
+          real-time graphs show stability and legitimacy. Maintained a
+          <strong>transparent Git history documenting AI-assisted
+          contributions</strong>, in line with Leiden's academic AI-use
+          disclosure expectations - a small but real exercise in
+          governing your own AI use.
         </p>
         <div class="project-meta">
           <span class="chip rose">Crisis simulation</span>
@@ -720,7 +562,7 @@
         </div>
       </article>
 
-      <article class="project reveal with-image" data-lens="security"
+      <article class="project reveal with-image"
                style="--proj-bg: url('assets/photos/linux-on-phone.jpg');">
         <div class="project-tag"><span class="dot"></span> Security · Lab</div>
         <h3>Cybersecurity practice lab</h3>
@@ -739,7 +581,7 @@
         </div>
       </article>
 
-      <article class="project reveal" data-lens="security">
+      <article class="project reveal">
         <div class="project-tag"><span class="dot"></span> Security · Area studies</div>
         <h3>Conflict &amp; area studies - Syria · Fukushima · DPRK</h3>
         <p>
@@ -760,57 +602,7 @@
         </div>
       </article>
 
-      <!-- ===== Audio (3) ===== -->
-      <article class="project reveal" data-lens="audio">
-        <div class="project-tag"><span class="dot"></span> Audio · Bug fix</div>
-        <h3>Web Audio playback bug fix</h3>
-        <p>
-          Tracked down a tricky bug that was silently cutting off the
-          first fifth of a second of every audio playback. Wrote a
-          clean fix - which also lifted a key piece of the analyser's
-          accuracy by 19 percentage points, with a follow-up timing
-          fix adding another 5.
-        </p>
-        <div class="project-meta">
-          <span class="chip blue">Web Audio</span>
-          <span class="chip">Debugging</span>
-          <span class="chip">Performance</span>
-        </div>
-      </article>
-
-      <article class="project reveal" data-lens="audio">
-        <div class="project-tag"><span class="dot"></span> Audio · Recording</div>
-        <h3>Abbey Road Institute - choir session</h3>
-        <p>
-          Recorded a male choir for a hybrid orchestral / synthesiser
-          piece, captured in Pro Tools through an SSL mixing console at
-          Abbey Road Institute Amsterdam.
-        </p>
-        <div class="project-meta">
-          <span class="chip blue">Pro Tools</span>
-          <span class="chip">SSL console</span>
-          <span class="chip">Choir capture</span>
-        </div>
-      </article>
-
-      <article class="project reveal" data-lens="audio">
-        <div class="project-tag"><span class="dot"></span> Audio · Recording</div>
-        <h3>Bethlehem chapel - solo piano session</h3>
-        <p>
-          Recorded a solo piano session at the Bethlehem chapel using a
-          single-microphone (mono) setup. Documented the full recording
-          chain - microphone placement, signal processing, and routing
-          - so the session is reproducible.
-        </p>
-        <div class="project-meta">
-          <span class="chip blue">Mono recording</span>
-          <span class="chip">Signal chain</span>
-          <span class="chip">Live capture</span>
-        </div>
-      </article>
-
-      <!-- ===== Cross-cutting / always shown ===== -->
-      <article class="project reveal" data-lens="all">
+      <article class="project reveal">
         <div class="project-tag"><span class="dot"></span> Humanitarian · Field</div>
         <h3>Refugee housing build - Slovakia (2022-2024)</h3>
         <p>
@@ -861,12 +653,6 @@
             <span class="ow-tag">Software</span>
           </li>
           <li>
-            <span class="ow-name">Bash Audio-Conversion Scripts
-              <small>Batch audio-conversion automation taught alongside DAW workflows for student production handover.</small>
-            </span>
-            <span class="ow-tag">Software · Bash</span>
-          </li>
-          <li>
             <span class="ow-name">Personal Finance Tracker
               <small>Spreadsheet + Python pipeline for personal finance tracking and brokerage reconciliation.</small>
             </span>
@@ -876,37 +662,19 @@
       </div>
 
       <div class="ow-group">
-        <h4 class="ow-subhead">Music Tech</h4>
+        <h4 class="ow-subhead">Data &amp; Tooling</h4>
         <ul class="other-list">
           <li>
             <span class="ow-name">Regression CLI for Music Pipeline
               <small>Node-based harness producing diff reports across 909+ pieces, tracking accuracy per algorithm version.</small>
             </span>
-            <span class="ow-tag">Music Tech · Tooling</span>
+            <span class="ow-tag">Tooling</span>
           </li>
           <li>
             <span class="ow-name">chord2midi (ChordTools)
               <small>Python CLI converting chord-chart text into clean MIDI and MusicXML files.</small>
             </span>
-            <span class="ow-tag">Music Tech · Python</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="ow-group">
-        <h4 class="ow-subhead">Composition</h4>
-        <ul class="other-list">
-          <li>
-            <span class="ow-name">Theatrical Scoring &amp; IB Mentorship
-              <small>Original scoring for mentored IB HL Music students; performed live at Amare and Theater aan het Spui.</small>
-            </span>
-            <span class="ow-tag">Composition</span>
-          </li>
-          <li>
-            <span class="ow-name">Original Compositions Portfolio
-              <small>Private body of original work - orchestral, chamber, theatrical, cinematic. Available on request.</small>
-            </span>
-            <span class="ow-tag">Composition · Private</span>
+            <span class="ow-tag">Python</span>
           </li>
         </ul>
       </div>
@@ -923,11 +691,39 @@
     <div class="skill-groups reveal-stagger">
 
       <div class="skill-group">
+        <h4>AI Governance &amp; Frontier-AI Risk</h4>
+        <div class="skill-list">
+          <span class="chip gold">EU AI Act</span>
+          <span class="chip gold">AI Safety</span>
+          <span class="chip gold">Frontier AI policy</span>
+          <span class="chip gold">AI-system risk analysis</span>
+          <span class="chip">Model evals</span>
+          <span class="chip">AI-use disclosure</span>
+          <span class="chip">Cybersecurity governance</span>
+          <span class="chip">Multilateral security institutions</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Applied AI &amp; Agentic Systems</h4>
+        <div class="skill-list">
+          <span class="chip gold">Claude API (Anthropic)</span>
+          <span class="chip gold">MCP (Model Context Protocol)</span>
+          <span class="chip gold">Agentic workflows</span>
+          <span class="chip gold">Prompt design</span>
+          <span class="chip">Structured output / validation</span>
+          <span class="chip">Regression harnesses for LLMs</span>
+          <span class="chip">OpenAI API</span>
+          <span class="chip">ElevenLabs API</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
         <h4>Programming &amp; Software</h4>
         <div class="skill-list">
+          <span class="chip">Python</span>
           <span class="chip">JavaScript (Vanilla)</span>
           <span class="chip">TypeScript</span>
-          <span class="chip">Python</span>
           <span class="chip">C++</span>
           <span class="chip">Node.js</span>
           <span class="chip">Bash</span>
@@ -940,7 +736,6 @@
           <span class="chip">D3.js</span>
           <span class="chip">JUCE</span>
           <span class="chip">CMake</span>
-          <span class="chip blue">Claude API (Anthropic)</span>
         </div>
       </div>
 
@@ -953,33 +748,6 @@
           <span class="chip gold">MusicXML</span>
           <span class="chip">DSP</span>
           <span class="chip">Form Analysis</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <h4>Audio Engineering</h4>
-        <div class="skill-list">
-          <span class="chip">Pro Tools</span>
-          <span class="chip">Logic Pro X</span>
-          <span class="chip">SSL Consoles</span>
-          <span class="chip">Sibelius</span>
-          <span class="chip">MuseScore</span>
-          <span class="chip">Dorico</span>
-          <span class="chip">Mixing</span>
-          <span class="chip">Mastering</span>
-          <span class="chip">Live Recording</span>
-          <span class="chip">Choir / Ensemble Capture</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <h4>Studios &amp; Venues</h4>
-        <div class="skill-list">
-          <span class="chip gold">Abbey Road Institute · Amsterdam</span>
-          <span class="chip">STMPD Studios</span>
-          <span class="chip">Bethlehem Chapel</span>
-          <span class="chip">Amare · The Hague</span>
-          <span class="chip">Theater aan het Spui</span>
         </div>
       </div>
 
@@ -997,18 +765,6 @@
           <span class="chip rose">Recon</span>
           <span class="chip rose">JWT / Auth</span>
           <span class="chip rose">Rate Limiting</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <h4>Composition</h4>
-        <div class="skill-list">
-          <span class="chip">Counterpoint</span>
-          <span class="chip">Orchestration</span>
-          <span class="chip">Film Scoring</span>
-          <span class="chip">Modal Theory</span>
-          <span class="chip">Voice Leading</span>
-          <span class="chip">Theatrical Scoring</span>
         </div>
       </div>
 
@@ -1054,22 +810,30 @@
     <div class="contact-card reveal">
       <h2>Let's build something.</h2>
       <p>
-        Currently studying Security Studies at Leiden University and
-        actively pursuing internships in cyber governance, applied
-        cybersecurity, and OSINT / open-source intelligence work.
+        Studying Security Studies at Leiden and actively pursuing
+        internships at the intersection of <strong>AI governance,
+        frontier-AI security, and applied AI systems</strong>. Open to
+        both technical roles (evals, agentic tooling, LLM safety
+        engineering) and policy / research roles (governance analysis,
+        risk assessment, institutional resilience).
       </p>
       <p style="font-size: 16.5px; color: var(--text-soft); margin-top: -8px;">
-        Particularly interested in: <strong>Hague-based policy &amp; research</strong>
-        (Clingendael, HCSS, T.M.C. Asser, OPCW, ICC), <strong>applied
-        cyber</strong> (Politie, TNO, Fox-IT, NCIA, ENISA), and
-        <strong>OSINT / open-source intelligence</strong> work.
+        Particularly interested in: <strong>frontier-AI labs &amp;
+        safety institutes</strong> (Anthropic, UK / US AI Safety
+        Institutes, GovAI, RAND, CSET), <strong>EU AI governance</strong>
+        (EU AI Office, ENISA, HCSS, Clingendael), and <strong>Hague-based
+        policy &amp; research</strong> (T.M.C. Asser, OPCW, Amnesty
+        International NL). Also open to applied AI / automation roles
+        that push adjacent problems - like Tesla Energy Operations - where
+        the underlying stack is the same.
       </p>
       <div class="contact-links">
         <a href="mailto:attilakondor006@gmail.com" class="btn btn-primary">attilakondor006@gmail.com</a>
         <a href="https://www.linkedin.com/in/attila-kondor-" class="btn" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://github.com/dhm-ak" class="btn" target="_blank" rel="noopener">GitHub</a>
+        <a href="assets/docs/attila-kondor-cv.pdf" class="btn" target="_blank" rel="noopener">Download CV (PDF)</a>
       </div>
-      <p class="references-line">Academic and professional references available on request.</p>
+      <p class="references-line">Academic and professional references available on request. There's also a full <a href="music.html">Music &amp; Audio</a> page for the separate audio-engineering / composition work.</p>
     </div>
   </div>
 </section>
@@ -1078,6 +842,7 @@
 <footer>
   <div class="container">
     <div class="footer-links">
+      <a href="music.html">Music &amp; Audio</a>
       <a href="gallery.html">Photo gallery</a>
       <a href="https://github.com/dhm-ak" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.linkedin.com/in/attila-kondor-" target="_blank" rel="noopener">LinkedIn</a>
@@ -1097,69 +862,6 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
 document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => io.observe(el));
 
-/* ============ Lens system ============ */
-const ALLOWED_LENSES = ['all', 'security', 'music-tech', 'audio'];
-const LENS_LABEL = {
-  'all': 'All',
-  'security': 'Security & Policy',
-  'music-tech': 'Music Technology',
-  'audio': 'Audio Engineering',
-};
-
-function readLensFromUrl() {
-  const v = new URLSearchParams(location.search).get('lens');
-  return ALLOWED_LENSES.includes(v) ? v : 'all';
-}
-
-function applyLens(lens, opts) {
-  opts = opts || {};
-  document.querySelectorAll('[data-lens-btn]').forEach(b => {
-    const isActive = b.dataset.lensBtn === lens;
-    b.classList.toggle('active', isActive);
-    b.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-  });
-
-  const grid = document.getElementById('projectGrid');
-  if (grid) {
-    grid.querySelectorAll('.project').forEach(card => {
-      const cardLens = card.dataset.lens;
-      const show = (lens === 'all') || (cardLens === lens) || (cardLens === 'all');
-      card.style.display = show ? '' : 'none';
-    });
-  }
-
-  // Stats grid - each stat has data-lens-show="space-separated lens names"
-  const statsGrid = document.getElementById('statsGrid');
-  if (statsGrid) {
-    statsGrid.querySelectorAll('.stat').forEach(stat => {
-      const list = (stat.dataset.lensShow || '').split(/\s+/);
-      stat.style.display = list.includes(lens) ? '' : 'none';
-    });
-  }
-
-  const label = document.getElementById('lensActive');
-  if (label) label.textContent = LENS_LABEL[lens] || 'All';
-
-  const url = new URL(location);
-  if (lens === 'all') url.searchParams.delete('lens');
-  else url.searchParams.set('lens', lens);
-  history.replaceState(null, '', url);
-
-  if (opts.scrollToProjects) {
-    const target = document.getElementById('projects');
-    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-}
-
-document.querySelectorAll('[data-lens-btn]').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const lens = btn.dataset.lensBtn;
-    applyLens(lens, { scrollToProjects: false });
-  });
-});
-
-applyLens(readLensFromUrl(), { scrollToProjects: false });
-
 /* ============ Theme toggle ============ */
 const themeBtn = document.getElementById('themeToggle');
 if (themeBtn) {
@@ -1174,6 +876,159 @@ if (themeBtn) {
     }
   });
 }
+
+/* ============ Hero constellation background ============ */
+(function () {
+  const canvas = document.getElementById('heroBg');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d', { alpha: true });
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  let W = 0, H = 0, DPR = Math.min(window.devicePixelRatio || 1, 2);
+  const nodes = [];
+  const NODE_COUNT_DESKTOP = 46;
+  const NODE_COUNT_MOBILE = 22;
+  const LINK_DIST = 160;      // px, connect nodes closer than this
+  const DRIFT = prefersReduced ? 0 : 0.10; // slow
+
+  // Text exclusion zone (canvas coords, updated on resize)
+  let exZone = null;
+  const EX_PAD = 28;      // px padding around text
+  const EX_FADE = 90;     // px soft-fade radius outside the rect
+
+  function themeColors() {
+    const dark = document.documentElement.getAttribute('data-theme') === 'dark';
+    return dark
+      ? { node: 'rgba(212, 168, 74, 0.85)', line: 'rgba(212, 168, 74, 0.28)' }
+      : { node: 'rgba(140, 108, 34, 0.75)', line: 'rgba(140, 108, 34, 0.22)' };
+  }
+
+  function measureExclusion() {
+    const parent = canvas.parentElement; // <header class="hero">
+    const heroRect = parent.getBoundingClientRect();
+    // The whole hero-text block (headline + tagline + meta + buttons)
+    const textEl = parent.querySelector('.hero-text');
+    if (!textEl) { exZone = null; return; }
+    const r = textEl.getBoundingClientRect();
+    exZone = {
+      x: r.left - heroRect.left - EX_PAD,
+      y: r.top  - heroRect.top  - EX_PAD,
+      w: r.width  + EX_PAD * 2,
+      h: r.height + EX_PAD * 2,
+    };
+  }
+
+  function resize() {
+    const parent = canvas.parentElement;
+    W = parent.clientWidth;
+    H = parent.clientHeight;
+    canvas.width  = Math.floor(W * DPR);
+    canvas.height = Math.floor(H * DPR);
+    canvas.style.width  = W + 'px';
+    canvas.style.height = H + 'px';
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    measureExclusion();
+  }
+
+  function seed() {
+    nodes.length = 0;
+    const count = W < 720 ? NODE_COUNT_MOBILE : NODE_COUNT_DESKTOP;
+    for (let i = 0; i < count; i++) {
+      nodes.push({
+        x: Math.random() * W,
+        y: Math.random() * H,
+        vx: (Math.random() - 0.5) * DRIFT,
+        vy: (Math.random() - 0.5) * DRIFT,
+        r: 1.1 + Math.random() * 1.4,
+      });
+    }
+  }
+
+  function step() {
+    const { node, line } = themeColors();
+    ctx.clearRect(0, 0, W, H);
+
+    // Links first (behind nodes)
+    ctx.lineWidth = 1;
+    for (let i = 0; i < nodes.length; i++) {
+      for (let j = i + 1; j < nodes.length; j++) {
+        const a = nodes[i], b = nodes[j];
+        const dx = a.x - b.x, dy = a.y - b.y;
+        const d = Math.hypot(dx, dy);
+        if (d < LINK_DIST) {
+          const alpha = 1 - d / LINK_DIST;
+          ctx.strokeStyle = line.replace(/[\d.]+\)$/, (alpha * 0.55).toFixed(3) + ')');
+          ctx.beginPath();
+          ctx.moveTo(a.x, a.y);
+          ctx.lineTo(b.x, b.y);
+          ctx.stroke();
+        }
+      }
+    }
+
+    // Nodes
+    ctx.fillStyle = node;
+    for (const n of nodes) {
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+      ctx.fill();
+
+      n.x += n.vx;
+      n.y += n.vy;
+      if (n.x < -10) n.x = W + 10;
+      if (n.x > W + 10) n.x = -10;
+      if (n.y < -10) n.y = H + 10;
+      if (n.y > H + 10) n.y = -10;
+    }
+
+    // Erase behind the text with a soft-blurred rectangle so the
+    // constellation fades out approaching the text rather than
+    // running under it.
+    if (exZone) {
+      ctx.save();
+      ctx.globalCompositeOperation = 'destination-out';
+      ctx.filter = 'blur(' + EX_FADE + 'px)';
+      ctx.fillStyle = 'rgba(0, 0, 0, 1)';
+      ctx.fillRect(exZone.x, exZone.y, exZone.w, exZone.h);
+      ctx.restore();
+    }
+  }
+
+  let rafId = 0;
+  function loop() {
+    step();
+    if (DRIFT > 0) rafId = requestAnimationFrame(loop);
+  }
+
+  resize();
+  seed();
+  step();
+  if (DRIFT > 0) rafId = requestAnimationFrame(loop);
+
+  // Remeasure once fonts finish loading (Cormorant Garamond swap can
+  // shift the text-block height slightly on first paint).
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(() => { measureExclusion(); step(); });
+  }
+
+  let resizeTO;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTO);
+    resizeTO = setTimeout(() => { resize(); seed(); step(); }, 120);
+  });
+
+  // Pause when hero is off-screen (perf + battery)
+  const heroObs = new IntersectionObserver((entries) => {
+    for (const e of entries) {
+      if (e.isIntersecting) {
+        if (DRIFT > 0 && !rafId) rafId = requestAnimationFrame(loop);
+      } else {
+        if (rafId) { cancelAnimationFrame(rafId); rafId = 0; }
+      }
+    }
+  }, { threshold: 0 });
+  heroObs.observe(canvas.parentElement);
+})();
 
 /* ============ Active nav link highlighting ============ */
 const navLinks = document.querySelectorAll('.nav-links a');

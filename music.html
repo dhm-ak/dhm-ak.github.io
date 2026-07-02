@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#FAF6EE" />
+<meta name="description" content="Music & Audio - Attila Kondor. Recording engineer, composer, and founder of Harmonic Conservatory. Abbey Road Institute Advanced Diploma, sessions across Amsterdam and The Hague, in-browser music-tech tooling." />
+<meta name="robots" content="index, follow" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Music &amp; Audio · Attila Kondor" />
+<meta property="og:description" content="Recording engineer, composer, and founder of Harmonic Conservatory. Abbey Road Institute Advanced Diploma; sessions across Amsterdam and The Hague." />
+<meta property="og:url" content="https://attilakondor.com/music.html" />
+<meta property="og:image" content="https://attilakondor.com/assets/social/og-image.png" />
+<title>Music &amp; Audio · Attila Kondor</title>
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23A78630'/><text x='16' y='22' text-anchor='middle' font-family='Inter,sans-serif' font-weight='600' font-size='15' fill='%23FAF6EE'>AK</text></svg>" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<style>
+  :root { color-scheme: light dark; }
+  html, body { background: #FAF6EE; color: #3A3528; }
+  :root[data-theme="dark"] html, :root[data-theme="dark"] body { background: #0A0F1A; color: #C8D4E2; }
+  body {
+    margin: 0;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 18.5px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+</style>
+
+<link rel="stylesheet" href="assets/css/main.css" />
+
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('ak-theme');
+      if (saved === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    } catch (e) {}
+  })();
+</script>
+</head>
+
+<body>
+
+<a href="#about" class="skip-link">Skip to content</a>
+
+<!-- ============== NAV ============== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand"><span class="mark">AK</span> Attila Kondor</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="index.html">← Back to CV</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============== HERO ============== -->
+<header class="hero" id="top">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="eyebrow" style="margin-bottom: 22px;">Music &amp; Audio · The other half</div>
+        <h1>
+          Attila Kondor
+          <span class="accent">Recording engineer, composer, and founder of Harmonic Conservatory. A separate track from the security work - built with the same discipline.</span>
+        </h1>
+        <div class="hero-meta">
+          <span>The Hague, Netherlands</span>
+          <span>Abbey Road Institute · Advanced Diploma</span>
+          <span>Sessions across NL</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#experience" class="btn btn-primary">The journey →</a>
+          <a href="gallery.html" class="btn">Photo gallery</a>
+          <a href="index.html" class="btn">← Security &amp; software CV</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============== ABOUT ============== -->
+<section id="about">
+  <div class="container">
+    <div class="eyebrow reveal">01 · Introduction</div>
+    <h2 class="section-title reveal">A short introduction.</h2>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          Music has been running alongside everything else for as long as
+          I've been building things. I trained as a recording engineer at
+          the <strong>Abbey Road Institute Amsterdam</strong>, taught IB
+          Higher-Level music students to top grades, engineered sessions
+          for professional artists in venues across the Netherlands, and
+          along the way started building <strong>Harmonic Conservatory</strong>
+          - a music-technology platform that grew directly out of that
+          teaching practice.
+        </p>
+        <p>
+          This page is the full story of that side of things: the
+          diploma, the sessions, the composition work, and the software
+          I've built for music. The <a href="index.html">main CV</a>
+          holds the security and software work I'm targeting
+          professionally; this page holds everything music-adjacent that
+          would crowd it.
+        </p>
+        <p>
+          Everything here is still active. The plan over the next year
+          is to grow Harmonic Conservatory into a real platform and to
+          keep shipping Chord Architect updates alongside the security
+          research at Leiden.
+        </p>
+      </div>
+      <div class="stats reveal-stagger">
+        <div class="stat">
+          <div class="stat-num">81.88<small>%</small></div>
+          <div class="stat-label">Abbey Road Institute graduation</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1<small> yr</small></div>
+          <div class="stat-label">Full-time Advanced Diploma at ARI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">5</div>
+          <div class="stat-label">Studios / venues recorded in</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">IB HL</div>
+          <div class="stat-label">Music students mentored to top grades</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">15</div>
+          <div class="stat-label">Curriculum modules shipped (Conservatory)</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">909<small>+</small></div>
+          <div class="stat-label">Pieces analysed (POP909 dataset)</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">81.85<small>%</small></div>
+          <div class="stat-label">MIREX root accuracy (vs 37 % baseline)</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">JUCE<small> 8</small></div>
+          <div class="stat-label">Native VST shipped (Chord Architect)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== EDUCATION ============== -->
+<section id="education">
+  <div class="container">
+    <div class="eyebrow reveal">02 · Education</div>
+    <h2 class="section-title reveal">Where I trained.</h2>
+
+    <div class="edu-grid reveal-stagger">
+
+      <div class="edu-card">
+        <div class="edu-date">Graduated · Nov 2025</div>
+        <div class="edu-school">Abbey Road Institute Amsterdam</div>
+        <div class="edu-degree">Music Production &amp; Sound Engineering Advanced Diploma (1 yr, full-time)</div>
+        <div class="edu-detail">
+          Pro Tools, SSL console operation, mixing, mastering, music
+          business and copyright law. Final grade 81.88 %; productions
+          tracked at ARI Amsterdam. Formal ceremony June 2026, London.
+          <a href="assets/docs/abbey-road-completion.pdf" target="_blank" rel="noopener" class="edu-link">View completion letter (PDF) →</a>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-date">Issued Jul 2024</div>
+        <div class="edu-school">International School of The Hague</div>
+        <div class="edu-degree">IB Diploma · HL Music mentorship</div>
+        <div class="edu-detail">
+          Mentored peers in IB Higher-Level Music - multiple students
+          achieved the highest possible grade in Exploration Reports
+          and Video Performances under my guidance.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============== EXPERIENCE ============== -->
+<section id="experience">
+  <div class="container">
+    <div class="eyebrow reveal">03 · Experience</div>
+    <h2 class="section-title reveal">Where I've built and recorded.</h2>
+
+    <div class="timeline">
+
+      <div class="tl-item reveal">
+        <div class="tl-date">Mar 2025 - Present · Hybrid</div>
+        <div class="tl-role">Founder &amp; Lead Developer</div>
+        <div class="tl-company">Harmonic Conservatory · Self-employed
+          <span class="pin">The Hague, NL</span></div>
+        <p class="tl-body">
+          Founding and developing Harmonic Conservatory, a pre-launch
+          music-technology startup. Its first product, <em>Nebula
+          ScoreWorks</em>, is a website that takes a piece of digital
+          sheet music and breaks it down automatically - showing the
+          chords, the structure, the rises and falls of tension - and
+          writes a plain-English description of what's happening
+          musically.
+        </p>
+        <ul class="tl-bullets">
+          <li>Built the entire analyser in the browser using plain JavaScript - no servers, runs instantly on any computer.</li>
+          <li>Built an automated test system that runs the analyser against 909+ real songs from a public reference dataset, flagging any drop in accuracy on every code change.</li>
+          <li>Designed a classification system that recognises common song structures (verse-chorus-verse patterns and similar) - the same kind of pattern-recognition skill used in OSINT investigation and threat-classification work.</li>
+          <li>Tracked down a tricky audio bug that was silently cutting off the first fifth of a second of every playback. Wrote a clean fix and shipped it.</li>
+          <li>Built an automatic commentary feature: for every musical phrase the system writes a paragraph in plain English explaining what's happening - so beginners can read the analysis without music-theory training.</li>
+        </ul>
+        <div class="inline-strip">
+          <div class="photo" data-cap="Nebula ScoreWorks - tension graph &amp; score render with chord roman-numeral analysis">
+            <img decoding="async" src="assets/photos/nebula-1.jpg" alt="Nebula ScoreWorks - tension graph view" loading="lazy"/>
+            <div class="cap">Tension graph · Score render</div>
+          </div>
+          <div class="photo" data-cap="Nebula ScoreWorks - global music culture &amp; eras map">
+            <img decoding="async" src="assets/photos/nebula-3.jpg" alt="Nebula ScoreWorks - culture and eras map" loading="lazy"/>
+            <div class="cap">Culture &amp; eras map</div>
+          </div>
+          <div class="photo" data-cap="Nebula ScoreWorks - phrase-specific composition prose">
+            <img decoding="async" src="assets/photos/nebula-6.jpg" alt="Nebula ScoreWorks - generative prose" loading="lazy"/>
+            <div class="cap">Generative composition prose</div>
+          </div>
+        </div>
+        <div class="tl-tags">
+          <span class="chip gold">Vanilla JS</span>
+          <span class="chip gold">VexFlow</span>
+          <span class="chip gold">Web Audio</span>
+          <span class="chip gold">MIDI / MusicXML</span>
+          <span class="chip blue">Node CLI</span>
+          <span class="chip">DSP</span>
+          <span class="chip">Design Systems</span>
+          <span class="chip">EdTech</span>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-date">Jul 2023 - Jan 2025 · Hybrid</div>
+        <div class="tl-role">Music Instructor &amp; Independent Recording Engineer</div>
+        <div class="tl-company">Self-employed
+          <span class="pin">The Hague, NL</span></div>
+        <p class="tl-body">
+          Two parallel tracks under one self-employed practice. <strong>Taught
+          students</strong> composition, piano performance, and music
+          production using industry-standard tools (Logic Pro X, Pro
+          Tools, SSL mixing consoles); several mentees earned the
+          <strong>top grade</strong> in IB Higher-Level Music. Alongside
+          teaching, <strong>engineered recording sessions for working
+          professional artists</strong> - strings, vocals, solo piano,
+          and live theatrical performances.
+        </p>
+        <ul class="tl-bullets">
+          <li><strong>Sessions for professional artists</strong> - tracked string ensembles, solo vocalists, and live theatrical performances across studio and venue settings, with full microphone-placement and signal-chain documentation so the sessions are reproducible.</li>
+          <li>Recorded at <strong>Amare</strong>, <strong>Theater aan het Spui</strong>, and the Bethlehem chapel - covering studio piano captures, choir / ensemble work, and live theatrical productions.</li>
+          <li>Designed individual lesson plans for each student - some learning piano as songwriters, others as classical arrangers.</li>
+          <li>Trained students to move smoothly between the major music software (Logic Pro X, Pro Tools, Sibelius, MuseScore, Dorico) so they could pick the right tool for each project.</li>
+          <li>Wrote small command-line scripts that automatically convert and rename batches of audio files - saving students hours of manual work each session.</li>
+          <li>Composed original pieces inspired by theatrical performances, tailored to IB exam requirements.</li>
+        </ul>
+        <div class="inline-strip">
+          <div class="photo" data-cap="On the faders - mix pass">
+            <img decoding="async" src="assets/photos/studio-console-faders.jpg" alt="On the faders" loading="lazy"/>
+            <div class="cap">Faders · Mix pass</div>
+          </div>
+          <div class="photo" data-cap="Flying faders mid-recall">
+            <img decoding="async" src="assets/photos/studio-flying-faders.jpg" alt="Flying faders" loading="lazy"/>
+            <div class="cap">Automation · Flying faders</div>
+          </div>
+          <div class="photo" data-cap="Patchbay - signal routing">
+            <img decoding="async" src="assets/photos/studio-patchbay.jpg" alt="Patchbay" loading="lazy"/>
+            <div class="cap">Patchbay · Routing</div>
+          </div>
+        </div>
+        <div class="tl-tags">
+          <span class="chip gold">Recording Engineer</span>
+          <span class="chip gold">Composition</span>
+          <span class="chip gold">Mentoring</span>
+          <span class="chip">String tracking</span>
+          <span class="chip">Vocal tracking</span>
+          <span class="chip">Live capture</span>
+          <span class="chip">Pro Tools</span>
+          <span class="chip">Logic Pro X</span>
+          <span class="chip">SSL consoles</span>
+          <span class="chip">Sibelius / MuseScore / Dorico</span>
+          <span class="chip blue">Bash</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============== PROJECTS ============== -->
+<section id="projects">
+  <div class="container">
+    <div class="eyebrow reveal">04 · Projects</div>
+    <h2 class="section-title reveal">Selected music &amp; audio work.</h2>
+    <p class="section-lede reveal">
+      A mix of in-browser music-tech, native plugin work, and recording
+      sessions. For the C++/JUCE plugin story, see
+      <a href="index.html#chord-architect">Chord Architect →</a> on
+      the software CV.
+    </p>
+
+    <div class="projects-grid">
+
+      <article class="project reveal">
+        <div class="project-tag"><span class="dot"></span> Music Tech · EdTech</div>
+        <h3>Harmonic Conservatory - online music school</h3>
+        <p>
+          A complete online music school. 15 progressive modules cover
+          theory, harmony, ear training, recording, mixing, and film
+          scoring - all running in the browser. Includes log-in to save
+          progress and choose between visual themes.
+        </p>
+        <div class="project-meta">
+          <span class="chip gold">EdTech</span>
+          <span class="chip">Curriculum design</span>
+          <span class="chip">15 modules</span>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project-tag"><span class="dot"></span> Music Tech · Toolkit</div>
+        <h3>Browser Music-Theory Toolkit</h3>
+        <p>
+          A collection of in-browser music-theory tools: a chord-progression
+          library, a genre-aware chord enhancer, a chord generator,
+          a workbench for sketching progressions, and a reference for
+          music traditions around the world. All share the same notation
+          renderer.
+        </p>
+        <div class="project-meta">
+          <span class="chip gold">Music theory</span>
+          <span class="chip">Generative tools</span>
+          <span class="chip">Chord voicing</span>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project-tag"><span class="dot"></span> Audio · Bug fix</div>
+        <h3>Web Audio playback bug fix</h3>
+        <p>
+          Tracked down a tricky bug that was silently cutting off the
+          first fifth of a second of every audio playback. Wrote a
+          clean fix - which also lifted a key piece of the analyser's
+          accuracy by 19 percentage points, with a follow-up timing
+          fix adding another 5.
+        </p>
+        <div class="project-meta">
+          <span class="chip blue">Web Audio</span>
+          <span class="chip">Debugging</span>
+          <span class="chip">Performance</span>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project-tag"><span class="dot"></span> Audio · Recording</div>
+        <h3>Abbey Road Institute - choir session</h3>
+        <p>
+          Recorded a male choir for a hybrid orchestral / synthesiser
+          piece, captured in Pro Tools through an SSL mixing console at
+          Abbey Road Institute Amsterdam.
+        </p>
+        <div class="project-meta">
+          <span class="chip blue">Pro Tools</span>
+          <span class="chip">SSL console</span>
+          <span class="chip">Choir capture</span>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project-tag"><span class="dot"></span> Audio · Recording</div>
+        <h3>Bethlehem chapel - solo piano session</h3>
+        <p>
+          Recorded a solo piano session at the Bethlehem chapel using a
+          single-microphone (mono) setup. Documented the full recording
+          chain - microphone placement, signal processing, and routing
+          - so the session is reproducible.
+        </p>
+        <div class="project-meta">
+          <span class="chip blue">Mono recording</span>
+          <span class="chip">Signal chain</span>
+          <span class="chip">Live capture</span>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project-tag"><span class="dot"></span> Cross-link · Native plugin</div>
+        <h3>Chord Architect - VST for Logic Pro &amp; other DAWs</h3>
+        <p>
+          A C++ / JUCE plugin that lets musicians pick chord progressions
+          visually and drag them into their DAW session as a MIDI clip.
+          Written up in full on the software CV, since the story there
+          is fundamentally the systems engineering behind it.
+        </p>
+        <div class="project-meta">
+          <span class="chip gold">C++</span>
+          <span class="chip gold">JUCE 8</span>
+          <span class="chip"><a href="index.html#chord-architect" style="color: inherit;">Also see Chord Architect →</a></span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============== OTHER WORK ============== -->
+<section id="other-work">
+  <div class="container">
+    <div class="eyebrow reveal">05 · Other work</div>
+    <h2 class="section-title reveal">Composition &amp; smaller tools.</h2>
+
+    <div class="other-work reveal">
+
+      <div class="ow-group">
+        <h4 class="ow-subhead">Composition</h4>
+        <ul class="other-list">
+          <li>
+            <span class="ow-name">Theatrical Scoring &amp; IB Mentorship
+              <small>Original scoring for mentored IB HL Music students; performed live at Amare and Theater aan het Spui.</small>
+            </span>
+            <span class="ow-tag">Composition</span>
+          </li>
+          <li>
+            <span class="ow-name">Original Compositions Portfolio
+              <small>Private body of original work - orchestral, chamber, theatrical, cinematic. Available on request.</small>
+            </span>
+            <span class="ow-tag">Composition · Private</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="ow-group">
+        <h4 class="ow-subhead">Tooling</h4>
+        <ul class="other-list">
+          <li>
+            <span class="ow-name">Bash Audio-Conversion Scripts
+              <small>Batch audio-conversion automation taught alongside DAW workflows for student production handover.</small>
+            </span>
+            <span class="ow-tag">Bash</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============== SKILLS ============== -->
+<section id="skills">
+  <div class="container">
+    <div class="eyebrow reveal">06 · Skills &amp; Toolchain</div>
+    <h2 class="section-title reveal">What I work with.</h2>
+
+    <div class="skill-groups reveal-stagger">
+
+      <div class="skill-group">
+        <h4>Audio Engineering</h4>
+        <div class="skill-list">
+          <span class="chip">Pro Tools</span>
+          <span class="chip">Logic Pro X</span>
+          <span class="chip">SSL Consoles</span>
+          <span class="chip">Sibelius</span>
+          <span class="chip">MuseScore</span>
+          <span class="chip">Dorico</span>
+          <span class="chip">Mixing</span>
+          <span class="chip">Mastering</span>
+          <span class="chip">Live Recording</span>
+          <span class="chip">Choir / Ensemble Capture</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Studios &amp; Venues</h4>
+        <div class="skill-list">
+          <span class="chip gold">Abbey Road Institute · Amsterdam</span>
+          <span class="chip">STMPD Studios</span>
+          <span class="chip">Bethlehem Chapel</span>
+          <span class="chip">Amare · The Hague</span>
+          <span class="chip">Theater aan het Spui</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Composition</h4>
+        <div class="skill-list">
+          <span class="chip">Counterpoint</span>
+          <span class="chip">Orchestration</span>
+          <span class="chip">Film Scoring</span>
+          <span class="chip">Modal Theory</span>
+          <span class="chip">Voice Leading</span>
+          <span class="chip">Theatrical Scoring</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Music Tech / DSP</h4>
+        <div class="skill-list">
+          <span class="chip gold">VexFlow</span>
+          <span class="chip gold">Web Audio API</span>
+          <span class="chip gold">MIDI</span>
+          <span class="chip gold">MusicXML</span>
+          <span class="chip">DSP</span>
+          <span class="chip">Form Analysis</span>
+          <span class="chip">JUCE</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============== WHAT'S NEXT ============== -->
+<section id="whats-next">
+  <div class="container">
+    <div class="contact-card reveal">
+      <h2>What this is turning into.</h2>
+      <p>
+        Right now this page is a portfolio. Over the next year it turns
+        into a platform. <strong>Harmonic Conservatory</strong> launches
+        as a proper product - browser-based music education plus the
+        Nebula ScoreWorks analyser - and <strong>Chord Architect</strong>
+        continues shipping as a native VST for Logic, Pro Tools, and
+        Ableton.
+      </p>
+      <p style="font-size: 16.5px; color: var(--text-soft); margin-top: -8px;">
+        If any of that is interesting - collaboration, session work,
+        beta testing, or just a conversation - the contact details are
+        on the <a href="index.html#contact">main CV</a>.
+      </p>
+      <div class="contact-links">
+        <a href="index.html#contact" class="btn btn-primary">Get in touch</a>
+        <a href="gallery.html" class="btn">Photo gallery</a>
+        <a href="index.html" class="btn">← Security &amp; software CV</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="index.html">CV</a>
+      <a href="gallery.html">Photo gallery</a>
+      <a href="https://www.linkedin.com/in/attila-kondor-" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:attilakondor006@gmail.com">Email</a>
+    </div>
+    <p>© 2026 Attila Kondor · The Hague · Music &amp; Audio</p>
+  </div>
+</footer>
+
+<!-- ============== JS ============== -->
+<script>
+/* Reveal-on-scroll */
+const io = new IntersectionObserver((entries) => {
+  for (const e of entries) {
+    if (e.isIntersecting) { e.target.classList.add('shown'); io.unobserve(e.target); }
+  }
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => io.observe(el));
+
+/* Theme toggle */
+const themeBtn = document.getElementById('themeToggle');
+if (themeBtn) {
+  themeBtn.addEventListener('click', () => {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    if (isDark) {
+      document.documentElement.removeAttribute('data-theme');
+      try { localStorage.setItem('ak-theme', 'light'); } catch (e) {}
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      try { localStorage.setItem('ak-theme', 'dark'); } catch (e) {}
+    }
+  });
+}
+
+/* Active nav link highlighting (in-page only) */
+const navLinks = document.querySelectorAll('.nav-links a');
+const sections = [...navLinks]
+  .map(a => {
+    const href = a.getAttribute('href');
+    if (!href || !href.startsWith('#')) return null;
+    return document.querySelector(href);
+  })
+  .filter(Boolean);
+const navIO = new IntersectionObserver((entries) => {
+  for (const e of entries) {
+    if (e.isIntersecting) {
+      navLinks.forEach(a => a.classList.toggle(
+        'active', a.getAttribute('href') === '#' + e.target.id
+      ));
+    }
+  }
+}, { threshold: 0.4 });
+sections.forEach(s => navIO.observe(s));
+
+/* Inline-strip / gallery lightbox */
+let lastFocus = null;
+function openLightbox(src, caption) {
+  let lb = document.getElementById('lightbox');
+  if (!lb) {
+    lb = document.createElement('div');
+    lb.id = 'lightbox';
+    lb.className = 'lightbox';
+    lb.setAttribute('role', 'dialog');
+    lb.setAttribute('aria-modal', 'true');
+    lb.setAttribute('aria-label', 'Image viewer');
+    lb.innerHTML =
+      '<button class="lightbox-close" aria-label="Close image viewer">&times;</button>' +
+      '<img decoding="async" alt=""/>' +
+      '<div class="lightbox-cap"></div>';
+    document.body.appendChild(lb);
+    lb.addEventListener('click', (e) => { if (e.target === lb) closeLightbox(); });
+    lb.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+    lb.addEventListener('keydown', (e) => {
+      if (e.key === 'Tab') {
+        e.preventDefault();
+        lb.querySelector('.lightbox-close').focus();
+      }
+    });
+  }
+  lb.querySelector('img').src = src;
+  lb.querySelector('img').alt = caption || '';
+  lb.querySelector('.lightbox-cap').textContent = caption || '';
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  setTimeout(() => lb.querySelector('.lightbox-close').focus(), 0);
+}
+function closeLightbox() {
+  const lb = document.getElementById('lightbox');
+  if (!lb) return;
+  lb.classList.remove('open');
+  document.body.style.overflow = '';
+  if (lastFocus && typeof lastFocus.focus === 'function') {
+    lastFocus.focus();
+    lastFocus = null;
+  }
+}
+document.querySelectorAll('.inline-strip .photo, .gallery .photo, .project-shots .shot').forEach(slot => {
+  slot.setAttribute('tabindex', '0');
+  slot.setAttribute('role', 'button');
+  const img = slot.querySelector('img');
+  if (img) slot.setAttribute('aria-label', 'View image: ' + (slot.dataset.cap || img.alt || 'photo'));
+
+  const open = () => {
+    if (img && img.src) {
+      lastFocus = slot;
+      openLightbox(img.src, slot.dataset.cap || img.alt);
+    }
+  };
+  slot.addEventListener('click', open);
+  slot.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      open();
+    }
+  });
+});
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeLightbox();
+});
+</script>
+
+</body>
+</html>

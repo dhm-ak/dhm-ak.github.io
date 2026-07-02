@@ -1,42 +1,7 @@
-# macOS
+# Ad-hoc files dropped in the repo root that should never be published
+*.xlsx
+
+# OS / editor cruft
 .DS_Store
-.AppleDouble
-.LSOverride
-._*
-
-# Editor / IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS / temp
 Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# Common originals / pre-conversion files (never ship raw HEIC etc.)
-_originals/
-*.HEIC
-*.heic
-
-# Private notes that should never be public
-Internships.xlsx
-internships.xlsx
-*outreach-toolkit*
-*pre-launch-checklist*
-changelog*.md
-notes/
-private/
-
-# Build artefacts (none right now, future-proofing)
-node_modules/
-dist/
-build/
-.cache/
-
-# Env / secrets
-.env
-.env.*
-*.local
+*.swp
